@@ -1,28 +1,43 @@
 
 
-<div class="home-top-container">
-  <h1 class="card-home-text-h1">Project ReMAKE</h1>
-    <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
-  <h2 class="card-home-text-h2">Stronger Together - Working Together</h2>
-  <h2>Prison – You may be confined by it, do not be defined by it.</h2>
-  <h2>THE PROGRAMME</h2>
-  <p>Project ReMAKE and ReMAKE Educational are projects working in the Criminal Justice space seeking to help ex-offenders by bringing them into the wider society both in terms of business opportunity and education. The overall aim of these programmes is to create a community and a better understanding of formally incarcerated people and those with criminal convictions.
-  Judge Kameel Khan
-  </p>
-</div>
-<div class="home-baner">
-  <h1>OUR VISION</h1>
-  <p>Our vision is to use the empowerment of entrepreneurship and self- employment to foster the successful re-entry of formerly incarcerated individuals back into society, create a new beginning for their families and a positive change to their life.</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website with Navbar and Flexboxes</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><%= link_to 'Home', home_path %></li>
+      <li><%= link_to 'About', about_path %></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Dropdown</a>
+        <div class="dropdown-content">
+          <%= link_to 'Link 1', home_path %>
+          <%= link_to 'Link 2', home_path %>
+          <%= link_to 'Link 3', home_path %>
+        </div>
+      </li>
+    </ul>
+  </nav>
 
-<form action="/contact" method="get">
-  <input type="text" name="member" placeholder="Who are you looking for?">
-  <input type="submit">
-</form>
-</div>
+  <div class="flex-container">
+    <div class="flex-item">
+      <h2>Flexbox 1</h2>
+      <p>Content for Flexbox 1 goes here.</p>
+    </div>
+    <div class="flex-item">
+      <h2>Flexbox 2</h2>
+      <p>Content for Flexbox 2 goes here.</p>
+    </div>
+    <div class="flex-item">
+      <h2>Flexbox 3</h2>
+      <p>Content for Flexbox 3 goes here.</p>
+    </div>
+  </div>
+
+  <%= yield %>
+</body>
+</html>

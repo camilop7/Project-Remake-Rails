@@ -1,0 +1,80 @@
+/* Navbar styles */
+.navbar {
+  list-style-type: none;
+  margin-top: auto;
+  padding: 0;
+  overflow-wrap: break-word;
+  background-color: #c94444;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Flexbox styles */
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Registration form styles */
+.registration-form {
+  margin-top: 20px;
+}
+
+.registration-form h2 {
+  font-size: 24px;
+}
+
+.registration-form .field {
+  margin-bottom: 10px;
+}
+
+.registration-form .actions {
+  margin-top: 10px;
+}
+
+/* Logos styles */
+.logos {
+  margin-top: 20px;
+}
+
+.logos a {
+  margin-right: 10px;
+}
