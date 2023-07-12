@@ -1,15 +1,13 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Website with Navbar and Flexboxes</title>
+  <title>Project ReMAKE</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-  <nav>
-    <ul class="navbar">
+  <nav class="navbar">
+    <ul class="navbardot">
       <li><%= link_to 'Home', home_path %></li>
       <li><%= link_to 'About', about_path %></li>
       <li class="dropdown">
@@ -41,3 +39,29 @@
   <%= yield %>
 </body>
 </html>
+
+<div class="js-top-banner top-banner" role="banner">
+<button class="menu-toggle" role="button" aria-expanded="false">
+<span class="toggle-indicator"></span>
+<span class="visually-hidden">Menu</span>
+<span class="menu-bar top-bar"></span>
+<span class="menu-bar bottom-bar"></span>
+</button>
+
+<div class="primary-logo">
+<a href="/">
+<span class="visually-hidden">Project Remake Home</span>
+</a>
+</div>
+
+<nav id="navigation" role="navigation" class="navigation" aria-expanded="true" aria-hidden="false" style="top: 0px; height: auto;">
+<ul class="menu-category level-1 nav-menu">
+<li class="nav-item-account">
+<a class="nav-item-link" href="" role="button" title="Sign In / Register">
+Sign In / Register
+<i class="menu-item-toggle account-open-menu" aria-hidden="true"></i>
+</a>
+</li>
+<li class="nav-item">
+
+<div class="menu-wrap">
