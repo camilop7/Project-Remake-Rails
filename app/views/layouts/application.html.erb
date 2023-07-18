@@ -1,4 +1,4 @@
-<%= stylesheet_link_tag 'home', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 
 <!DOCTYPE html>
 <html>
@@ -6,33 +6,10 @@
     <title>Project ReMAKE</title>
     <meta name="Project ReMAKE" content="Stronger Together - Working Together.">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
   </head>
   <body>
-    <nav>
-        <ul class="navbar">
-          <li class="dropdown">
-            <a href="#">Menu</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Entrepenurs</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">About Us</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">The programme</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Educational</a></li>
-        </ul>
-    </nav>
-    <div class="flex-container">
-      <div class="flex-item">ReMAKE
-            Project
-            Stronger Together - Working Together</div>
-      <div class="flex-item">Project ReMAKE and ReMAKE Educational are projects working in the Criminal Justice space seeking to help ex-offenders by bringing them into the wider society both in terms of business opportunity and education. The overall aim of these programmes is to create a community and a better understanding of formally incarcerated people and those with criminal convictions.
-            Judge Kameel Khan</div>
-      <div class="flex-item">Flexbox 3</div>
-    </div>
+    <%= yield %>
   </body>
-</html>
