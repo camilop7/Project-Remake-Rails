@@ -1,4 +1,87 @@
+
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 @import "config/fonts";
 @import "config/bootstrap_variables";
+
+body {
+  background-color: rgb(241, 217, 217);
+  margin-top: 0px;
+  // color: black;
+}
+
+.navbar {
+  background-color: rgb(109, 21, 21);
+  display: flex;
+  position: sticky;
+  margin: 0;
+  font-weight: 400;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar-expand-lg_bg-body-tertiary {
+  position: absolute;
+  margin-top: 0px;
+  background-color: rgb(161, 13, 13);
+  position: sticky;
+  margin: 0;
+  padding: 24px;
+  text-align: center;
+}
+
+.container-fluid {
+  background-color: rgb(130, 66, 66);
+  margin-top: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding: 8px;
+}
+
+.flexbox-container {
+  display: flexbox;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(130, 66, 66);
+  margin-top: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding: 8px;
+}
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 5px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #555;
+}
+
+.social-icon:hover {
+  color: #222;
+}
+
+// .navbar {
+//   background-color: black;
+//   color: black;
+// }
