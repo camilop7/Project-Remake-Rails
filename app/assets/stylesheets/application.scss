@@ -4,57 +4,155 @@
 @import "config/fonts";
 @import "config/bootstrap_variables";
 
+// background-color: rgb(130, 66, 66);
+
 body {
-  background-color: rgb(241, 217, 217);
+  background-color: rgb(233, 214, 214);
   margin-top: 0px;
+  margin: auto;
   // color: black;
 }
 
 .navbar {
-  background-color: rgb(109, 21, 21);
-  display: flex;
-  position: sticky;
-  margin: 0;
-  font-weight: 400;
-  align-items: center;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: rgb(130, 66, 66);
+  padding: 36px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 12px;
 }
 
-.navbar-expand-lg_bg-body-tertiary {
+.navbar-brand {
+  float: left;
+}
+
+.navbar-project {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links {
+  float: left;
+  margin-left: 20px;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.navbar-dropdown {
+  float: right;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
   position: absolute;
-  margin-top: 0px;
-  background-color: rgb(161, 13, 13);
-  position: sticky;
-  margin: 0;
-  padding: 24px;
-  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-.container-fluid {
-  background-color: rgb(130, 66, 66);
-  margin-top: 0px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding: 8px;
+.dropdown-item {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 8px;
 }
 
-.flexbox-container {
-  display: flexbox;
+.dropdown-toggle:focus + .dropdown-menu {
+  display: block;
 }
 
-.flex-container {
+.carousel {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: rgb(130, 66, 66);
-  margin-top: 0px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding: 8px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-top: 180px;
+  padding: 180px;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.carousel-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.carousel-link img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: #555;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 
+.form-container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 75%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 36px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+textarea.form-control {
+  resize: vertical;
+}
 
 .footer {
   position: fixed;
@@ -80,8 +178,3 @@ body {
 .social-icon:hover {
   color: #222;
 }
-
-// .navbar {
-//   background-color: black;
-//   color: black;
-// }
