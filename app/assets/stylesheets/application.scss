@@ -10,17 +10,18 @@ body {
   background-color: rgb(233, 214, 214);
   margin-top: 0px;
   margin: auto;
-  // color: black;
 }
 
 .navbar {
-  background-color: rgb(130, 66, 66);
+  background-color: rgb(229, 148, 148);
   padding: 36px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   margin-bottom: 12px;
+  border-radius: 5px;
+  z-index: 1000;
 }
 
 .navbar-brand {
@@ -31,6 +32,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar-links {
@@ -41,7 +43,7 @@ body {
 .navbar-link {
   color: #fff;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 16px;
 }
 
 .navbar-dropdown {
@@ -76,10 +78,8 @@ body {
 
 .carousel {
   display: flex;
-  overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  -ms-overflow-style: none;
   margin-top: 180px;
   padding: 180px;
 }
@@ -98,9 +98,10 @@ body {
 
 .carousel-link img {
   width: 100%;
-  max-width: 400px;
+  max-width: 2400px;
   height: auto;
   object-fit: cover;
+  margin: auto;
 }
 
 .carousel-button {
@@ -108,7 +109,7 @@ body {
   padding: 8px 16px;
   background-color: #333;
   color: #fff;
-  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -136,7 +137,7 @@ body {
 }
 
 .logo {
-  background-image: "/app/assets/images/logo.png";
+  width: 50%;
 }
 
 .form-control {
